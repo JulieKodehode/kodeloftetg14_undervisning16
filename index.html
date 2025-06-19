@@ -31,6 +31,104 @@
     <main>
       <section class="section">
         <!-- Hero section / Home section / Main secton -->
+        <form>
+          <label for="nameInput">
+            Skriv navnet ditt
+            <input type="text" name="nameInput" id="nameInput" placeholder="Eks. Ola Nordmann">
+          </label>
+
+          <label for="">
+            <input type="number" name="" id="">
+          </label>
+
+          <label for="">
+            <input type="checkbox" name="" id="" autofocus>
+            <input type="checkbox" name="" id="">
+            <input type="checkbox" name="" id="">
+          </label>
+
+          <label for="">
+            <input type="date" name="" id="">
+          </label>
+
+          <!-- 
+            Undervisnings challange:
+            1. Sett opp en label og input for email = virker ikke uten @
+            2. Sett opp en label og input for password = skjuler bokstaver
+          -->
+          <label for="">
+            <input type="email" name="" id="">
+          </label>
+
+          <label for="">
+            <input type="password" name="" id="">
+          </label>
+
+          <label for="">
+            <input type="button" value="Send">
+          </label>
+
+          <button type="submit">Send</button>
+        </form>
+      </section>
+
+      <section class="section">
+        <!-- Innlogging -->
+        <form>
+          <label for="userEmail">
+            Email:
+            <input type="email" name="userEmail" id="userEmail" placeholder="Eks. olanordmann@yahoo.no">
+          </label>
+
+          <label for="userPassword">
+            Passord:
+            <input type="password" name="userPassword" id="userPassword">
+          </label>
+
+          <label for="viewPassword">
+            <input type="checkbox" name="viewPassword" id="viewPassword">
+            Vis passord
+          </label>
+
+          <label for="rememberLogin">
+            <input type="checkbox" name="rememberLogin" id="rememberLogin">
+            Husk innlogging
+          </label>
+
+          <button>Logg inn</button>
+        </form>
+      </section>
+
+      <section class="section">
+        <!-- Målenhetskonventerer -->
+        <form>
+          <label for="unitInput">
+            Skriv et tall
+            <input type="number" name="unitInput" id="unitInput">
+          </label>
+
+          <label for="unitFrom">
+            <select name="unitFrom" id="unitFrom">
+              <option value="mm">MM</option>
+              <option value="cm">CM</option>
+              <option value="m">M</option>
+              <option value="km">KM</option>
+            </select>
+          </label>
+
+          <label for="unitTo">
+            <select name="unitTo" id="unitTo">
+              <option value="mm">MM</option>
+              <option value="cm">CM</option>
+              <option value="m">M</option>
+              <option value="km">KM</option>
+            </select>
+          </label>
+
+          <button id="submitButton">Send</button>
+
+          <p id="unitOutput"> <!-- Innhold kommer fra JS --> </p>
+        </form>
       </section>
     </main>
 
