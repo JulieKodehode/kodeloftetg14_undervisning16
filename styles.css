@@ -1,0 +1,100 @@
+:root {
+  /* Farge variabler */
+  --primaryColor: #fcc388ff; /* Peach */
+  --secondaryColor: #ffc5c9ff; /* Tea rose red*/
+  --accentColor: #ffffd1ff; /* Cream */
+  --accentColorTwo: #fee5d0ff; /* Champagne pink*/
+  --accentColorThree: #fff6edff; /* Seashell */
+
+  /* Størrelse variabler */
+  --smallSpace: 8px;
+  --mediumSpace: 16px;
+  --largeSpace: 24px;
+  --fullScreen: 100vh;
+
+  /* Skrift variabler */
+  --fontFamily: "Roboto";
+  --fontSize: 18px;
+}
+
+/* GENERAL */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--fontFamily);
+}
+
+img {
+  max-width: 50%;
+}
+
+.icon {
+  height: 32px;
+  width: 32px;
+}
+
+.hidden {
+  display: none;
+}
+
+.light {
+  background-color: white;
+  color: black;
+}
+
+.dark {
+  background-color: black;
+  color: white;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  background-color: lightgray;
+}
+
+/* Nav */
+.navList {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+}
+
+/* MAIN */
+.section {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* FOOTER */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: lightgray;
+}
+
+.arrowIcon {
+  transform: rotate(180deg);
+}
+
+/* MEDIA */
+@media (max-width: 426px) {
+  .sectionHero,
+  .sectionAbout,
+  .sectionProjects {
+    flex-direction: column;
+    gap: 8px;
+    padding: 8px;
+  }
+}
